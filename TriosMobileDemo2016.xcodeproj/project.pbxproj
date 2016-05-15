@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017535C41CE88E540094D100 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C21CE88E540094D100 /* TriosComms.swift */; };
+		017535C51CE88E540094D100 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C31CE88E540094D100 /* TriosDelegate.swift */; };
+		017535CC1CE88E940094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C61CE88E940094D100 /* PlotViewController.swift */; };
+		017535CD1CE88E940094D100 /* SignalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C71CE88E940094D100 /* SignalsTableViewController.swift */; };
+		017535CE1CE88E940094D100 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C81CE88E940094D100 /* StatusViewController.swift */; };
+		017535CF1CE88E940094D100 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C91CE88E940094D100 /* MyMenuTableViewController.swift */; };
+		017535D01CE88E940094D100 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535CA1CE88E940094D100 /* MainViewController.swift */; };
+		017535D11CE88E940094D100 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535CB1CE88E940094D100 /* MyNavigationController.swift */; };
+		017535D71CE88EC60094D100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017535D21CE88EC60094D100 /* Images.xcassets */; };
+		017535D81CE88EC60094D100 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017535D31CE88EC60094D100 /* LaunchView.xib */; };
+		017535D91CE88EC60094D100 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017535D41CE88EC60094D100 /* Info.plist */; };
+		017535DA1CE88EC60094D100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535D51CE88EC60094D100 /* AppDelegate.swift */; };
+		017535DB1CE88EC60094D100 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 017535D61CE88EC60094D100 /* image.png */; };
+		017535DD1CE88F180094D100 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535DC1CE88F180094D100 /* TabBarController.swift */; };
+		017535F81CE88F680094D100 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */; };
+		017535F91CE88F680094D100 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E01CE88F680094D100 /* ysocket.swift */; };
+		017535FA1CE88F680094D100 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E11CE88F680094D100 /* ENSideMenu.swift */; };
+		017535FB1CE88F680094D100 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 017535E21CE88F680094D100 /* ytcpsocket.c */; };
+		017535FC1CE88F680094D100 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E31CE88F680094D100 /* ytcpsocket.swift */; };
+		017535FD1CE88F680094D100 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 017535E41CE88F680094D100 /* yudpsocket.c */; };
+		017535FE1CE88F680094D100 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E51CE88F680094D100 /* yudpsocket.swift */; };
+		017535FF1CE88F680094D100 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E61CE88F680094D100 /* JSON.swift */; };
+		017536001CE88F680094D100 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E71CE88F680094D100 /* JSONDecodable.swift */; };
+		017536011CE88F680094D100 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E81CE88F680094D100 /* JSONEncodable.swift */; };
+		017536021CE88F680094D100 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E91CE88F680094D100 /* JSONExtensions.swift */; };
+		017536031CE88F680094D100 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535EB1CE88F680094D100 /* BEMAverageLine.m */; };
+		017536041CE88F680094D100 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535ED1CE88F680094D100 /* BEMCircle.m */; };
+		017536051CE88F680094D100 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535EF1CE88F680094D100 /* BEMLine.m */; };
+		017536061CE88F680094D100 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F11CE88F680094D100 /* BEMPermanentPopupView.m */; };
+		017536071CE88F680094D100 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */; };
+		017536081CE88F680094D100 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */; };
+		017536091CE88F680094D100 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F61CE88F680094D100 /* GCDAsyncSocket.m */; };
+		0175360E1CE8A7500094D100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175360D1CE8A7500094D100 /* Main.storyboard */; };
+		5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C132596198E2A9A00CA49BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C13257B198E2A9A00CA49BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C132582198E2A9A00CA49BE;
+			remoteInfo = SwiftSideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017535C21CE88E540094D100 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosComms.swift; path = TriosMobileDemo2016/TriosComms.swift; sourceTree = SOURCE_ROOT; };
+		017535C31CE88E540094D100 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosDelegate.swift; path = TriosMobileDemo2016/TriosDelegate.swift; sourceTree = SOURCE_ROOT; };
+		017535C61CE88E940094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewController.swift; path = TriosMobileDemo2016/PlotViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C71CE88E940094D100 /* SignalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalsTableViewController.swift; path = TriosMobileDemo2016/SignalsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C81CE88E940094D100 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = TriosMobileDemo2016/StatusViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C91CE88E940094D100 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = TriosMobileDemo2016/MyMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535CA1CE88E940094D100 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = TriosMobileDemo2016/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535CB1CE88E940094D100 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = TriosMobileDemo2016/MyNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		017535D21CE88EC60094D100 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TriosMobileDemo2016/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		017535D31CE88EC60094D100 /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchView.xib; path = TriosMobileDemo2016/LaunchView.xib; sourceTree = SOURCE_ROOT; };
+		017535D41CE88EC60094D100 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TriosMobileDemo2016/Info.plist; sourceTree = SOURCE_ROOT; };
+		017535D51CE88EC60094D100 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TriosMobileDemo2016/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		017535D61CE88EC60094D100 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = TriosMobileDemo2016/image.png; sourceTree = SOURCE_ROOT; };
+		017535DC1CE88F180094D100 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = TriosMobileDemo2016/TabBarController.swift; sourceTree = SOURCE_ROOT; };
+		017535DE1CE88F680094D100 /* TriosMobileDemo2016-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TriosMobileDemo2016-Bridging-Header.h"; path = "/Users/seshelman/Dev/TriosMobileDemo2016/Library/TriosMobileDemo2016-Bridging-Header.h"; sourceTree = "<absolute>"; };
+		017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ENSideMenuNavigationController.swift; sourceTree = "<absolute>"; };
+		017535E01CE88F680094D100 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ysocket.swift; sourceTree = "<absolute>"; };
+		017535E11CE88F680094D100 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ENSideMenu.swift; sourceTree = "<absolute>"; };
+		017535E21CE88F680094D100 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ytcpsocket.c; sourceTree = "<absolute>"; };
+		017535E31CE88F680094D100 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ytcpsocket.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ytcpsocket.swift; sourceTree = "<absolute>"; };
+		017535E41CE88F680094D100 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/yudpsocket.c; sourceTree = "<absolute>"; };
+		017535E51CE88F680094D100 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = yudpsocket.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/yudpsocket.swift; sourceTree = "<absolute>"; };
+		017535E61CE88F680094D100 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/JSON.swift; sourceTree = "<absolute>"; };
+		017535E71CE88F680094D100 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/JSONDecodable.swift; sourceTree = "<absolute>"; };
+		017535E81CE88F680094D100 /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodable.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/JSONEncodable.swift; sourceTree = "<absolute>"; };
+		017535E91CE88F680094D100 /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONExtensions.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/JSONExtensions.swift; sourceTree = "<absolute>"; };
+		017535EA1CE88F680094D100 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMAverageLine.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMAverageLine.h; sourceTree = "<absolute>"; };
+		017535EB1CE88F680094D100 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMAverageLine.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMAverageLine.m; sourceTree = "<absolute>"; };
+		017535EC1CE88F680094D100 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCircle.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMCircle.h; sourceTree = "<absolute>"; };
+		017535ED1CE88F680094D100 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCircle.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMCircle.m; sourceTree = "<absolute>"; };
+		017535EE1CE88F680094D100 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMLine.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMLine.h; sourceTree = "<absolute>"; };
+		017535EF1CE88F680094D100 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMLine.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMLine.m; sourceTree = "<absolute>"; };
+		017535F01CE88F680094D100 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMPermanentPopupView.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMPermanentPopupView.h; sourceTree = "<absolute>"; };
+		017535F11CE88F680094D100 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMPermanentPopupView.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMPermanentPopupView.m; sourceTree = "<absolute>"; };
+		017535F21CE88F680094D100 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMSimpleLineGraphView.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMSimpleLineGraphView.h; sourceTree = "<absolute>"; };
+		017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMSimpleLineGraphView.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/BEMSimpleLineGraphView.m; sourceTree = "<absolute>"; };
+		017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncUdpSocket.m; sourceTree = "<absolute>"; };
+		017535F51CE88F680094D100 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncSocket.h; sourceTree = "<absolute>"; };
+		017535F61CE88F680094D100 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncSocket.m; sourceTree = "<absolute>"; };
+		017535F71CE88F680094D100 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncUdpSocket.h; sourceTree = "<absolute>"; };
+		0175360D1CE8A7500094D100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = TriosMobileDemo2016/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		5C132583198E2A9A00CA49BE /* TriosMobileDemo2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriosMobileDemo2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C132595198E2A9A00CA49BE /* TriosMobileDemo2016.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriosMobileDemo2016.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C13259A198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C132580198E2A9A00CA49BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C132592198E2A9A00CA49BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012E82DD1CDE2B88008BD3C2 /* Communications */ = {
+			isa = PBXGroup;
+			children = (
+				017535C21CE88E540094D100 /* TriosComms.swift */,
+				017535C31CE88E540094D100 /* TriosDelegate.swift */,
+			);
+			name = Communications;
+			sourceTree = "<group>";
+		};
+		1429137B19D979A50025188A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0175360D1CE8A7500094D100 /* Main.storyboard */,
+				017535D21CE88EC60094D100 /* Images.xcassets */,
+				017535D31CE88EC60094D100 /* LaunchView.xib */,
+				017535D51CE88EC60094D100 /* AppDelegate.swift */,
+				017535D61CE88EC60094D100 /* image.png */,
+				012E82DD1CDE2B88008BD3C2 /* Communications */,
+				1429139419DAA9C00025188A /* Controllers */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1429139419DAA9C00025188A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				017535DC1CE88F180094D100 /* TabBarController.swift */,
+				017535C61CE88E940094D100 /* PlotViewController.swift */,
+				017535C71CE88E940094D100 /* SignalsTableViewController.swift */,
+				017535C81CE88E940094D100 /* StatusViewController.swift */,
+				017535C91CE88E940094D100 /* MyMenuTableViewController.swift */,
+				017535CA1CE88E940094D100 /* MainViewController.swift */,
+				017535CB1CE88E940094D100 /* MyNavigationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		14EAB63A19DD4E95006A90FC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				017535DE1CE88F680094D100 /* TriosMobileDemo2016-Bridging-Header.h */,
+				017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */,
+				017535E01CE88F680094D100 /* ysocket.swift */,
+				017535E11CE88F680094D100 /* ENSideMenu.swift */,
+				017535E21CE88F680094D100 /* ytcpsocket.c */,
+				017535E31CE88F680094D100 /* ytcpsocket.swift */,
+				017535E41CE88F680094D100 /* yudpsocket.c */,
+				017535E51CE88F680094D100 /* yudpsocket.swift */,
+				017535E61CE88F680094D100 /* JSON.swift */,
+				017535E71CE88F680094D100 /* JSONDecodable.swift */,
+				017535E81CE88F680094D100 /* JSONEncodable.swift */,
+				017535E91CE88F680094D100 /* JSONExtensions.swift */,
+				017535EA1CE88F680094D100 /* BEMAverageLine.h */,
+				017535EB1CE88F680094D100 /* BEMAverageLine.m */,
+				017535EC1CE88F680094D100 /* BEMCircle.h */,
+				017535ED1CE88F680094D100 /* BEMCircle.m */,
+				017535EE1CE88F680094D100 /* BEMLine.h */,
+				017535EF1CE88F680094D100 /* BEMLine.m */,
+				017535F01CE88F680094D100 /* BEMPermanentPopupView.h */,
+				017535F11CE88F680094D100 /* BEMPermanentPopupView.m */,
+				017535F21CE88F680094D100 /* BEMSimpleLineGraphView.h */,
+				017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */,
+				017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */,
+				017535F51CE88F680094D100 /* GCDAsyncSocket.h */,
+				017535F61CE88F680094D100 /* GCDAsyncSocket.m */,
+				017535F71CE88F680094D100 /* GCDAsyncUdpSocket.h */,
+			);
+			name = Library;
+			path = ../../Library;
+			sourceTree = "<group>";
+		};
+		5C13257A198E2A9A00CA49BE = {
+			isa = PBXGroup;
+			children = (
+				5C132585198E2A9A00CA49BE /* TriosMobileDemo2016 */,
+				5C132598198E2A9A00CA49BE /* Tests */,
+				5C132584198E2A9A00CA49BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C132584198E2A9A00CA49BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C132583198E2A9A00CA49BE /* TriosMobileDemo2016.app */,
+				5C132595198E2A9A00CA49BE /* TriosMobileDemo2016.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C132585198E2A9A00CA49BE /* TriosMobileDemo2016 */ = {
+			isa = PBXGroup;
+			children = (
+				14EAB63A19DD4E95006A90FC /* Library */,
+				1429137B19D979A50025188A /* Source */,
+				5C132586198E2A9A00CA49BE /* Supporting Files */,
+			);
+			name = TriosMobileDemo2016;
+			path = SwiftSideMenu;
+			sourceTree = "<group>";
+		};
+		5C132586198E2A9A00CA49BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				017535D41CE88EC60094D100 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C132598198E2A9A00CA49BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */,
+				5C132599198E2A9A00CA49BE /* Supporting Files */,
+			);
+			name = Tests;
+			path = SwiftSideMenuTests;
+			sourceTree = "<group>";
+		};
+		5C132599198E2A9A00CA49BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C13259A198E2A9A00CA49BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C132582198E2A9A00CA49BE /* TriosMobileDemo2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C13259F198E2A9A00CA49BE /* Build configuration list for PBXNativeTarget "TriosMobileDemo2016" */;
+			buildPhases = (
+				5C13257F198E2A9A00CA49BE /* Sources */,
+				5C132580198E2A9A00CA49BE /* Frameworks */,
+				5C132581198E2A9A00CA49BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriosMobileDemo2016;
+			productName = SwiftSideMenu;
+			productReference = 5C132583198E2A9A00CA49BE /* TriosMobileDemo2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C132594198E2A9A00CA49BE /* TriosMobileDemo2016Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1325A2198E2A9A00CA49BE /* Build configuration list for PBXNativeTarget "TriosMobileDemo2016Tests" */;
+			buildPhases = (
+				5C132591198E2A9A00CA49BE /* Sources */,
+				5C132592198E2A9A00CA49BE /* Frameworks */,
+				5C132593198E2A9A00CA49BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C132597198E2A9A00CA49BE /* PBXTargetDependency */,
+			);
+			name = TriosMobileDemo2016Tests;
+			productName = SwiftSideMenuTests;
+			productReference = 5C132595198E2A9A00CA49BE /* TriosMobileDemo2016.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C13257B198E2A9A00CA49BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = objectthink.com;
+				TargetAttributes = {
+					5C132582198E2A9A00CA49BE = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 6AP8DGBG6H;
+					};
+					5C132594198E2A9A00CA49BE = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5C132582198E2A9A00CA49BE;
+					};
+				};
+			};
+			buildConfigurationList = 5C13257E198E2A9A00CA49BE /* Build configuration list for PBXProject "TriosMobileDemo2016" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C13257A198E2A9A00CA49BE;
+			productRefGroup = 5C132584198E2A9A00CA49BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C132582198E2A9A00CA49BE /* TriosMobileDemo2016 */,
+				5C132594198E2A9A00CA49BE /* TriosMobileDemo2016Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C132581198E2A9A00CA49BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017535D91CE88EC60094D100 /* Info.plist in Resources */,
+				0175360E1CE8A7500094D100 /* Main.storyboard in Resources */,
+				017535D81CE88EC60094D100 /* LaunchView.xib in Resources */,
+				017535D71CE88EC60094D100 /* Images.xcassets in Resources */,
+				017535DB1CE88EC60094D100 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C132593198E2A9A00CA49BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C13257F198E2A9A00CA49BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017535D01CE88E940094D100 /* MainViewController.swift in Sources */,
+				017536081CE88F680094D100 /* GCDAsyncUdpSocket.m in Sources */,
+				017536011CE88F680094D100 /* JSONEncodable.swift in Sources */,
+				017535C41CE88E540094D100 /* TriosComms.swift in Sources */,
+				017536061CE88F680094D100 /* BEMPermanentPopupView.m in Sources */,
+				017535CF1CE88E940094D100 /* MyMenuTableViewController.swift in Sources */,
+				017535FF1CE88F680094D100 /* JSON.swift in Sources */,
+				017536071CE88F680094D100 /* BEMSimpleLineGraphView.m in Sources */,
+				017535FA1CE88F680094D100 /* ENSideMenu.swift in Sources */,
+				017535DD1CE88F180094D100 /* TabBarController.swift in Sources */,
+				017535CC1CE88E940094D100 /* PlotViewController.swift in Sources */,
+				017536051CE88F680094D100 /* BEMLine.m in Sources */,
+				017536091CE88F680094D100 /* GCDAsyncSocket.m in Sources */,
+				017535FB1CE88F680094D100 /* ytcpsocket.c in Sources */,
+				017536001CE88F680094D100 /* JSONDecodable.swift in Sources */,
+				017535C51CE88E540094D100 /* TriosDelegate.swift in Sources */,
+				017535FD1CE88F680094D100 /* yudpsocket.c in Sources */,
+				017536031CE88F680094D100 /* BEMAverageLine.m in Sources */,
+				017535F91CE88F680094D100 /* ysocket.swift in Sources */,
+				017535FC1CE88F680094D100 /* ytcpsocket.swift in Sources */,
+				017535CE1CE88E940094D100 /* StatusViewController.swift in Sources */,
+				017535FE1CE88F680094D100 /* yudpsocket.swift in Sources */,
+				017535DA1CE88EC60094D100 /* AppDelegate.swift in Sources */,
+				017536041CE88F680094D100 /* BEMCircle.m in Sources */,
+				017535D11CE88E940094D100 /* MyNavigationController.swift in Sources */,
+				017535F81CE88F680094D100 /* ENSideMenuNavigationController.swift in Sources */,
+				017536021CE88F680094D100 /* JSONExtensions.swift in Sources */,
+				017535CD1CE88E940094D100 /* SignalsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C132591198E2A9A00CA49BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C132597198E2A9A00CA49BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C132582198E2A9A00CA49BE /* TriosMobileDemo2016 */;
+			targetProxy = 5C132596198E2A9A00CA49BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C13259D198E2A9A00CA49BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C13259E198E2A9A00CA49BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C1325A0198E2A9A00CA49BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TriosMobileDemo2016/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objectthink.triosmobiledemo2016;
+				PRODUCT_NAME = TriosMobileDemo2016;
+				SWIFT_OBJC_BRIDGING_HEADER = "Library/TriosMobileDemo2016-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C1325A1198E2A9A00CA49BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TriosMobileDemo2016/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.objectthink.triosmobiledemo2016;
+				PRODUCT_NAME = TriosMobileDemo2016;
+				SWIFT_OBJC_BRIDGING_HEADER = "Library/TriosMobileDemo2016-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5C1325A3198E2A9A00CA49BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSideMenu.app/SwiftSideMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftSideMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.test.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = TriosMobileDemo2016;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5C1325A4198E2A9A00CA49BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSideMenu.app/SwiftSideMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftSideMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.test.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = TriosMobileDemo2016;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C13257E198E2A9A00CA49BE /* Build configuration list for PBXProject "TriosMobileDemo2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C13259D198E2A9A00CA49BE /* Debug */,
+				5C13259E198E2A9A00CA49BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C13259F198E2A9A00CA49BE /* Build configuration list for PBXNativeTarget "TriosMobileDemo2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1325A0198E2A9A00CA49BE /* Debug */,
+				5C1325A1198E2A9A00CA49BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C1325A2198E2A9A00CA49BE /* Build configuration list for PBXNativeTarget "TriosMobileDemo2016Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1325A3198E2A9A00CA49BE /* Debug */,
+				5C1325A4198E2A9A00CA49BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C13257B198E2A9A00CA49BE /* Project object */;
+}
