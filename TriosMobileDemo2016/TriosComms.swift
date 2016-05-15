@@ -19,6 +19,7 @@ class TriosComms : GCDAsyncSocketDelegate
    var _instrument:JSON!
    var _experiment:JSON!
    var _delegate:TriosDelegate!
+   var _statusDelegate:TriosStatusDelegate!
    
    var _socket:GCDAsyncSocket!
    
@@ -27,7 +28,6 @@ class TriosComms : GCDAsyncSocketDelegate
    let _start:String = "{$@"
    let _end:String = "!*}"
    
-
    
    var delegate:TriosDelegate
    {
@@ -38,6 +38,18 @@ class TriosComms : GCDAsyncSocketDelegate
       get
       {
          return _delegate
+      }
+   }
+   
+   var statusDelegate:TriosStatusDelegate
+   {
+      set
+      {
+         _statusDelegate = newValue
+      }
+      get
+      {
+         return _statusDelegate
       }
    }
    
@@ -94,32 +106,45 @@ class TriosComms : GCDAsyncSocketDelegate
       guard let json = JSON(string: noend as String) else
       {
          print ("there was a problem parsing json")
+         _socket.readDataToData(NSData(bytes: _end, length: 3), withTimeout: 1, maxLength: 10000, tag: _tag)
          return
       }
       
       if let instrument = json["Instrument"]
       {
-         self._instrument = instrument
+         _instrument = instrument
          
-         if self._delegate != nil
+         if _delegate != nil
          {
-            self._delegate.instrumentInformation(instrument)
+            _delegate.instrumentInformation(instrument)
          }
       }
 
       if let signals = json["Signals"]
       {
-         if self._delegate != nil
+         if _delegate != nil
          {
-            self._delegate.signals(signals)
+            _delegate.signals(signals)
          }
       }
       
       if let experiment = json["Experiment"]
       {
-         self._experiment = experiment
+         _experiment = experiment
+         if _delegate != nil
+         {
+            _delegate.experiment(experiment)
+         }
       }
 
+      if let status = json["Status"]
+      {
+         if _statusDelegate != nil
+         {
+            _statusDelegate.status(status.string!)
+         }
+      }
+      
       _tag += 1
       
       //determine what packet it is and send to delegate

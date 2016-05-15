@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabBarController: UITabBarController
+class TabBarController: UITabBarController, TriosStatusDelegate
 {
    var _trios:TriosComms!
    
@@ -37,10 +37,18 @@ class TabBarController: UITabBarController
          action: #selector(burgerTapped))
       
       navigationItem.rightBarButtonItem = UIBarButtonItem(
-         title: "Idle",
+         title: "",
          style: .Plain,
          target: self,
          action: nil)
+   }
+   
+   func status(status: String)
+   {
+      dispatch_async(dispatch_get_main_queue(),
+      { () -> Void in
+         self.navigationItem.rightBarButtonItem?.title = status
+      })
    }
    
    func burgerTapped()
@@ -59,6 +67,8 @@ class TabBarController: UITabBarController
    override func viewWillAppear(animated: Bool)
    {
       self.navigationItem.title = trios.ipAddress
+      
+      trios.statusDelegate = self
    }
    
    override func viewWillDisappear(animated: Bool)

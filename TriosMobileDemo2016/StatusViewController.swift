@@ -51,6 +51,9 @@ class StatusViewController: UITableViewController, TriosDelegate
       
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
+         
+         //update here when instrument information changes
+         
       })
    }
    
@@ -64,6 +67,8 @@ class StatusViewController: UITableViewController, TriosDelegate
    
    override func viewWillAppear(animated: Bool)
    {
+      //get the tab bar controller that is managing this view which is of type TabBarController
+      //(could rename to TriosTabBarController)
       (tabBarController as! TabBarController).trios._delegate = self
       
       let trios:TriosComms = (tabBarController as! TabBarController).trios
@@ -73,6 +78,7 @@ class StatusViewController: UITableViewController, TriosDelegate
          return
       }
 
+      //update each time user visits this tab
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
          self._keys = Array<String>()

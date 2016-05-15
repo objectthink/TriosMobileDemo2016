@@ -14,3 +14,8 @@ protocol TriosDelegate
    func signals(signals:JSON)
    func experiment(experiment:JSON)
 }
+
+protocol TriosStatusDelegate
+{
+   func status(status:String)
+}
