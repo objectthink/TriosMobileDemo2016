@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "49A63D279B9424B0E2F8A84BBFF4805BCD0C9E8D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "49A63D279B9424B0E2F8A84BBFF4805BCD0C9E8D" : 0,
+    "CC65FC5DD8AF8E6EFF9AB2C1EBEADE7C7CF811D4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7DE93806-4F3F-47E2-B138-E5FF9DB96E82",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "49A63D279B9424B0E2F8A84BBFF4805BCD0C9E8D" : "TriosMobileDemo2016\/",
+    "CC65FC5DD8AF8E6EFF9AB2C1EBEADE7C7CF811D4" : "..\/Downloads\/ENSwiftSideMenu-master\/Example"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TriosMobileDemo2016",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TriosMobileDemo2016.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/objectthink\/TriosMobileDemo2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "49A63D279B9424B0E2F8A84BBFF4805BCD0C9E8D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/objectthink\/trios_mobile_demo_2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CC65FC5DD8AF8E6EFF9AB2C1EBEADE7C7CF811D4"
+    }
+  ]
+}
