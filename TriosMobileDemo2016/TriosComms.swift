@@ -103,6 +103,17 @@ class TriosComms : GCDAsyncSocketDelegate
       let nostart = s.stringByReplacingOccurrencesOfString(_start, withString: "")
       let noend = nostart.stringByReplacingOccurrencesOfString(_end, withString: "")
       
+//      if noend.containsString("Experiment") && noend.containsString("None")
+//      {
+//         _experiment = nil
+//         
+//         if _delegate != nil
+//         {
+//            _delegate.experiment(_experiment)
+//            return
+//         }
+//      }
+      
       guard let json = JSON(string: noend as String) else
       {
          print ("there was a problem parsing json")

@@ -17,7 +17,7 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
    
    var _keys:Array<String>!
    var _values:Array<String>!
-   
+   var _steps:Array<Dictionary<String, String>> = []
    
    override func viewDidLoad()
    {
@@ -26,7 +26,6 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
       // Do any additional setup after loading the view.
       _keys = Array<String>()
       _values = Array<String>()
-      
       _trios = (tabBarController as! TabBarController).trios
 
       _segmentedControl.selectedSegmentIndex = 0
@@ -73,6 +72,7 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
    {
       _keys.removeAll()
       _values.removeAll()
+      _steps.removeAll()
       
       let sections:[String] = ["Sample", "Geometry", "Procedure"]
       
@@ -90,12 +90,27 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
          {
             if key == "Steps"
             {
-               continue
+               _steps.removeAll()
+               
+               let stepObject = procedureSection["Steps"]?.object!
+               
+               for stepKey in (stepObject!.keys)
+               {
+                  var stepDictionary = Dictionary<String, String>()
+                  for skey in (stepObject![stepKey]?.object?.keys)!
+                  {
+                     stepDictionary[skey] = stepObject![stepKey]!.object![skey]!.string
+                  }
+                  _steps.append(stepDictionary)
+               }               
+            }
+            else
+            {
+               _keys.append(key)
+               
+               self._values.append((procedureSection[key]?.string)!)
             }
             
-            _keys.append(key)
-            
-            self._values.append((procedureSection[key]?.string)!)
          }
          
       }
@@ -120,7 +135,7 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
    {
       if _segmentedControl.selectedSegmentIndex == 2
       {
-         return 4
+         return 1 + _steps.count
       }
       else
       {
@@ -138,7 +153,7 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
          }
          else
          {
-            return 0
+            return _steps[section - 1].keys.count
          }
       }
       else
@@ -151,8 +166,17 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
    {
       let cell = tableView.dequeueReusableCellWithIdentifier("ExperimentCell", forIndexPath: indexPath)
       
-      cell.textLabel?.text = _keys[indexPath.row]
-      cell.detailTextLabel?.text = _values[indexPath.row]
+      if indexPath.section == 0
+      {
+         cell.textLabel?.text = _keys[indexPath.row]
+         cell.detailTextLabel?.text = _values[indexPath.row]
+      }
+      else
+      {
+         //procedure steps
+         cell.textLabel?.text = stepKeyForIndex(indexPath.row, section: indexPath.section)
+         cell.detailTextLabel?.text = stepValueForIndex(indexPath.row, section: indexPath.section)
+      }
       
       //demo accesory view
       //will be used to transition to a view controller that shows the full row
@@ -178,4 +202,35 @@ class ProcedureViewController: UIViewController, TriosDelegate, UITableViewDeleg
     }
     */
    
+   func stepKeyForIndex(index:Int, section:Int)->String
+   {
+      var currentIndex:Int = 0
+      for key in _steps[section - 1].keys
+      {
+         if currentIndex == index
+         {
+            return key
+         }
+         
+         currentIndex = currentIndex + 1
+      }
+      
+      return ""
+   }
+   
+   func stepValueForIndex(index:Int, section:Int)->String
+   {
+      var currentIndex:Int = 0
+      for key in _steps[section - 1].keys
+      {
+         if currentIndex == index
+         {
+            return _steps[section - 1][key]!
+         }
+         
+         currentIndex = currentIndex + 1
+      }
+      
+      return ""
+   }
 }
