@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0131C0C81CF09959002569CE /* ProcedureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131C0C71CF09959002569CE /* ProcedureViewController.swift */; };
 		017535C41CE88E540094D100 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C21CE88E540094D100 /* TriosComms.swift */; };
 		017535C51CE88E540094D100 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C31CE88E540094D100 /* TriosDelegate.swift */; };
 		017535CC1CE88E940094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C61CE88E940094D100 /* PlotViewController.swift */; };
@@ -40,7 +41,6 @@
 		017536081CE88F680094D100 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */; };
 		017536091CE88F680094D100 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F61CE88F680094D100 /* GCDAsyncSocket.m */; };
 		0175360E1CE8A7500094D100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175360D1CE8A7500094D100 /* Main.storyboard */; };
-		017536101CE8ABAB0094D100 /* ProcedureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175360F1CE8ABAB0094D100 /* ProcedureViewController.swift */; };
 		5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0131C0C71CF09959002569CE /* ProcedureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcedureViewController.swift; path = TriosMobileDemo2016/ProcedureViewController.swift; sourceTree = SOURCE_ROOT; };
 		017535C21CE88E540094D100 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosComms.swift; path = TriosMobileDemo2016/TriosComms.swift; sourceTree = SOURCE_ROOT; };
 		017535C31CE88E540094D100 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosDelegate.swift; path = TriosMobileDemo2016/TriosDelegate.swift; sourceTree = SOURCE_ROOT; };
 		017535C61CE88E940094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewController.swift; path = TriosMobileDemo2016/PlotViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -96,7 +97,6 @@
 		017535F61CE88F680094D100 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncSocket.m; sourceTree = "<absolute>"; };
 		017535F71CE88F680094D100 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/GCDAsyncUdpSocket.h; sourceTree = "<absolute>"; };
 		0175360D1CE8A7500094D100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = TriosMobileDemo2016/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		0175360F1CE8ABAB0094D100 /* ProcedureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedureViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C132583198E2A9A00CA49BE /* TriosMobileDemo2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriosMobileDemo2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C132595198E2A9A00CA49BE /* TriosMobileDemo2016.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriosMobileDemo2016.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C13259A198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				017535C91CE88E940094D100 /* MyMenuTableViewController.swift */,
 				017535CA1CE88E940094D100 /* MainViewController.swift */,
 				017535CB1CE88E940094D100 /* MyNavigationController.swift */,
-				0175360F1CE8ABAB0094D100 /* ProcedureViewController.swift */,
+				0131C0C71CF09959002569CE /* ProcedureViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,7 +360,6 @@
 				017536061CE88F680094D100 /* BEMPermanentPopupView.m in Sources */,
 				017535CF1CE88E940094D100 /* MyMenuTableViewController.swift in Sources */,
 				017535FF1CE88F680094D100 /* JSON.swift in Sources */,
-				017536101CE8ABAB0094D100 /* ProcedureViewController.swift in Sources */,
 				017536071CE88F680094D100 /* BEMSimpleLineGraphView.m in Sources */,
 				017535FA1CE88F680094D100 /* ENSideMenu.swift in Sources */,
 				017535DD1CE88F180094D100 /* TabBarController.swift in Sources */,
@@ -379,6 +378,7 @@
 				017535DA1CE88EC60094D100 /* AppDelegate.swift in Sources */,
 				017536041CE88F680094D100 /* BEMCircle.m in Sources */,
 				017535D11CE88E940094D100 /* MyNavigationController.swift in Sources */,
+				0131C0C81CF09959002569CE /* ProcedureViewController.swift in Sources */,
 				017535F81CE88F680094D100 /* ENSideMenuNavigationController.swift in Sources */,
 				017536021CE88F680094D100 /* JSONExtensions.swift in Sources */,
 				017535CD1CE88E940094D100 /* SignalsTableViewController.swift in Sources */,
